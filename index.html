@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+        .nav2{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid #179800;
+        }
+        @media only screen and (min-width: 800px){
+            .nav2{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 800px){
+            .nav1{
+                display: none; 
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+<div class="nav1">
+        <nav class="flex items-center justify-around" style="margin-top: 20px;">
+        <img src="c2-assets/logo-header.png" style="height: 100%;">
+        <ul class="flex gap-10">
+            <li>Product</li>
+            <li>Services</li>
+            <li>Contact us</li>
+        </ul>
+        <ul class="flex items-center gap-5">
+        <li><img src="c2-assets/magni.png" class="h-7"></li>
+        <li><img src="c2-assets/cart.png" class="h-7"></li>
+        <li><div class="dropdown">
+            <div tabindex="0" role="button" class="btn m-1 btn btn-outline btn-success">Login</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div></li>
+        <li><div class="dropdown btn-success">
+            <div tabindex="0" role="button" class="btn m-1 text-white">Regester</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div></li>
+        </ul>
+    </nav>
+</div>
+    <div class="nav2">
+        <img src="c2-assets/Group.png" style="height: 40px;">
+        <img src="c2-assets/bars-3.png" style="height: 27px;">
+    </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
