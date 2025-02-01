@@ -1,1 +1,0 @@
-<marquee width="100%" direction="left" height="50px">It's Our Promise To Provide Service By Healthy Food and Keep You Safe, Healthy and Strong</marquee>
