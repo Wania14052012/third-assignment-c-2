@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <style>
-        .nav2{
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .nav2 {
             display: flex;
             justify-content: space-between;
             padding: 10px;
@@ -15,53 +25,172 @@
             border: 1px solid #179800;
         }
         @media only screen and (min-width: 800px){
-            .nav2{
+            .nav2 {
                 display: none;
             }
         }
+
         @media only screen and (max-width: 800px){
-            .nav1{
-                display: none; 
+            .nav1 {
+                display: none;
             }
         }
     </style>
 </head>
-<body>
-    <header>
-<div class="nav1">
-        <nav class="flex items-center justify-around" style="margin-top: 20px;">
-        <img src="c2-assets/logo-header.png" style="height: 100%;">
-        <ul class="flex gap-10">
-            <li>Product</li>
-            <li>Services</li>
-            <li>Contact us</li>
-        </ul>
-        <ul class="flex items-center gap-5">
-        <li><img src="c2-assets/magni.png" class="h-7"></li>
-        <li><img src="c2-assets/cart.png" class="h-7"></li>
-        <li><div class="dropdown">
-            <div tabindex="0" role="button" class="btn m-1 btn btn-outline btn-success">Login</div>
-            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-            </ul>
-          </div></li>
-        <li><div class="dropdown btn-success">
-            <div tabindex="0" role="button" class="btn m-1 text-white">Regester</div>
-            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-            </ul>
-          </div></li>
-        </ul>
-    </nav>
-</div>
-    <div class="nav2">
-        <img src="c2-assets/Group.png" style="height: 40px;">
-        <img src="c2-assets/bars-3.png" style="height: 27px;">
+<body class="sora-font">
+<header>
+        <div class="nav1">
+            <nav class="flex items-center justify-around" style="margin-top: 20px;">
+                <img src="c2-assets/logo-header.png" style="height: 100%;">
+                <ul class="flex gap-10">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+                <ul class="flex items-center gap-5">
+                    <li><img src="c2-assets/magni.png" class="h-7"></li>
+                    <li><img src="c2-assets/cart.png" class="h-7"></li>
+                    <li>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn m-1 btn btn-outline btn-success">Login</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown btn-success">
+                            <div tabindex="0" role="button" class="btn m-1 text-white">Regester</div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav2">
+            <img src="c2-assets/Group.png" style="height: 40px;">
+            <img src="c2-assets/bars-3.png" style="height: 27px;">
+        </div>
+        <div class="flex flex-col items-center" style="background-image: linear-gradient(white,rgba(108, 108, 108, 0.168));">
+            <h1 class="text-center font-bold text-5xl mt-20 mb-5">Freshness <span class="text-lime-600">You Can<br>Count</span> On, Prices You’ll Love!
+            </h1>
+            <p class="text-center font-medium mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to
+                pantry <br>staples, we’ve got you covered every day!</p>
+            <img src="c2-assets/hero-vegetables.png" style="width: 75%;">
+        </div>
+</header>
+<main>
+<!-- Services -->
+<div class="px-10">
+        <h2 class="text-2xl text-green-700 mt-10">Services</h2>
+        <div class="service gap-4 mt-10 lg:grid grid-cols-3 sm:grid grid-cols-1">
+            <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+            <img src="c2-assets/service.png" class="rounded-full bg-white p-5" style="height: 100px;">
+            <h3>24/7 Service</h3>
+            <p class="font-light text-center">24/7 or 24-7 service is service that is available at any time.</p>
+        </div>
+        <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+            <img src="c2-assets/delivery.png" class="rounded-full bg-white p-3"style="height: 100px;">
+            <h3>Fast Delivery</h3>
+            <p class="font-light text-center">Delivery by express is the fastest delivery method.</p>
+        </div>
+        <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+            <img src="c2-assets/healthy.png" class="rounded-full bg-white p-3"style="height: 100px;">
+            <h3>Healthy Product </h3>
+            <p class="font-light text-center">These are food which keeps us healthy and strong</p>
+        </div>
     </div>
-    </header>
-    <main></main>
-    <footer></footer>
+</div>
+<!-- popular -->
+<div class="bg-gray-200 mt-10 p-10">
+     <h3 class="text-2xl text-green-700 m-auto">Popular Products</h3>
+     <div class="grid grid-cols-4 justify-center items-center gap-10 m-auto">
+        <div style="background-image: linear-gradient(#1aae00,#fff); border-radius: 12px;" class="p-10 row-span-3">
+            <h2 class="text-white text-2xl font-medium mb-5">30% 0ff</h2>
+            <p class="text-sm font-medium text-left mb-4">Discover a world of treats, toys, and <br>essentials handpicked for </p>
+            <button class="btn">Buy Now</button>
+            <img src="c2-assets/vegetable-offer.png" class="ml-10">
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
+            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
+            <div>
+            <p>⭐ 4.5</p>
+            <h3>Tomato 2kg</h3>
+            <p>$39.99</p>
+        </div>
+        </div>
+     </div>
+</div>
+</main>
 </body>
 </html>
