@@ -16,7 +16,6 @@
             font-weight: 800;
             font-style: normal;
         }
-
         .nav2 {
             display: flex;
             justify-content: space-between;
@@ -24,15 +23,21 @@
             align-items: center;
             border: 1px solid #179800;
         }
-        @media only screen and (min-width: 800px){
+        .rule{
+            display: flex;
+        }
+        @media only screen and (min-width: 800px) {
             .nav2 {
                 display: none;
             }
         }
 
-        @media only screen and (max-width: 800px){
+        @media only screen and (max-width: 800px) {
             .nav1 {
                 display: none;
+            }
+            .rule{
+                flex-direction: column;
             }
         }
     </style>
@@ -77,10 +82,13 @@
             <img src="c2-assets/Group.png" style="height: 40px;">
             <img src="c2-assets/bars-3.png" style="height: 27px;">
         </div>
-        <div class="flex flex-col items-center" style="background-image: linear-gradient(white,rgba(108, 108, 108, 0.168));">
-            <h1 class="text-center font-bold text-5xl mt-20 mb-5">Freshness <span class="text-lime-600">You Can<br>Count</span> On, Prices You’ll Love!
+        <div class="flex flex-col items-center"
+            style="background-image: linear-gradient(white,rgba(108, 108, 108, 0.168));">
+            <h1 class="text-center font-bold text-5xl mt-20 mb-5">Freshness <span class="text-lime-600">You
+                    Can<br>Count</span> On, Prices You’ll Love!
             </h1>
-            <p class="text-center font-medium mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to
+            <p class="text-center font-medium mb-5">Shop your daily essentials at unbeatable prices. From fresh produce
+                to
                 pantry <br>staples, we’ve got you covered every day!</p>
             <img src="c2-assets/hero-vegetables.png" style="width: 75%;">
         </div>
@@ -88,109 +96,151 @@
 <main>
 <!-- Services -->
 <div class="px-10">
-        <h2 class="text-2xl text-green-700 mt-10">Services</h2>
-        <div class="service gap-4 mt-10 lg:grid grid-cols-3 sm:grid grid-cols-1">
-            <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
-            <img src="c2-assets/service.png" class="rounded-full bg-white p-5" style="height: 100px;">
-            <h3>24/7 Service</h3>
-            <p class="font-light text-center">24/7 or 24-7 service is service that is available at any time.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
-            <img src="c2-assets/delivery.png" class="rounded-full bg-white p-3"style="height: 100px;">
-            <h3>Fast Delivery</h3>
-            <p class="font-light text-center">Delivery by express is the fastest delivery method.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
-            <img src="c2-assets/healthy.png" class="rounded-full bg-white p-3"style="height: 100px;">
-            <h3>Healthy Product </h3>
-            <p class="font-light text-center">These are food which keeps us healthy and strong</p>
-        </div>
-    </div>
+            <h2 class="text-2xl text-green-700 mt-10">Services</h2>
+            <div class="service gap-4 mt-10 lg:grid grid-cols-3 sm:grid grid-cols-1">
+                <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+                    <img src="c2-assets/service.png" class="rounded-full bg-white p-5" style="height: 100px;">
+                    <h3>24/7 Service</h3>
+                    <p class="font-light text-center">24/7 or 24-7 service is service that is available at any time.</p>
+                </div>
+                <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+                    <img src="c2-assets/delivery.png" class="rounded-full bg-white p-3" style="height: 100px;">
+                    <h3>Fast Delivery</h3>
+                    <p class="font-light text-center">Delivery by express is the fastest delivery method.</p>
+                </div>
+                <div class="rounded-2xl bg-gray-200 p-10 flex flex-col items-center justify-center my-5">
+                    <img src="c2-assets/healthy.png" class="rounded-full bg-white p-3" style="height: 100px;">
+                    <h3>Healthy Product </h3>
+                    <p class="font-light text-center">These are food which keeps us healthy and strong</p>
+                </div>
+            </div>
 </div>
 <!-- popular -->
-<div class="bg-gray-200 mt-10 p-10">
-     <h3 class="text-2xl text-green-700 m-auto">Popular Products</h3>
-     <div class="grid grid-cols-4 justify-center items-center gap-10 m-auto">
-        <div style="background-image: linear-gradient(#1aae00,#fff); border-radius: 12px;" class="p-10 row-span-3">
-            <h2 class="text-white text-2xl font-medium mb-5">30% 0ff</h2>
-            <p class="text-sm font-medium text-left mb-4">Discover a world of treats, toys, and <br>essentials handpicked for </p>
-            <button class="btn">Buy Now</button>
-            <img src="c2-assets/vegetable-offer.png" class="ml-10">
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/tomato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/onion.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-        <div class="bg-white rounded-2xl flex items-center p-4 gap-4">
-            <img src="c2-assets/potato.png" class="bg-gray-200 rounded-2xl h-20">
-            <div>
-            <p>⭐ 4.5</p>
-            <h3>Tomato 2kg</h3>
-            <p>$39.99</p>
-        </div>
-        </div>
-     </div>
+<div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-green-600 text-2xl font-bold">Popular Products</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Left Section -->
+                <div class="bg-green-100 p-6 rounded-lg text-left relative flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-green-600 text-2xl font-bold">30% off</h3>
+                        <p class="text-gray-600 text-sm mt-2">Discover a world of treats, toys, and essentials
+                            handpicked for you.</p>
+                    </div>
+                    <button class="pos bg-white text-black px-4 py-2 mt-4 rounded-lg shadow">Buy Now</button>
+                    <img src="c2-assets/vegetable-offer.png" alt="Vegetables" class="absolute bottom-0 right-0 w-24">
+                </div>
+
+                <!-- Right Section -->
+                <div class="lg:col-span-2 grid grid-cols-3 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/onion.png" alt="Onion">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Onion 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/tomato.png" alt="Tomato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Tomato 500 g</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/potato.png" alt="Potato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Potato 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/tomato.png" alt="Tomato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Tomato 500 g</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/onion.png" alt="Onion">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Onion 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/potato.png" alt="Potato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Potato 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/potato.png" alt="Potato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Potato 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/onion.png" alt="Onion">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Onion 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col items-center">
+                        <img src="c2-assets/tomato.png" alt="tomato">
+                        <span class="text-green-600 text-sm">⭐ 4.5</span>
+                        <p class="text-gray-700">Tomato 1 KG</p>
+                        <p class="text-gray-900 font-bold">$39.99</p>
+                    </div>
+                </div>
+            </div>
 </div>
+<!-- arrival -->
+ <div class="p-10">
+<h2 class="text-green-600 text-2xl mb-5 ">Arrival & Offer</h2>
+<div class="rule gap-10">
+<!-- first -->
+<div class="flex bg-green-900 p-5 rounded-2xl">
+<div class="flex flex-col gap-7 justify-center items-center"><img src="c2-assets/dawat-logo.png" style="width: 70%;"><button class="bg-green-700 text-white font-light px-6 py-2 rounded-xl">Cook Exotic Dishes</button>
+<h3 class="text-2xl text-white font-light">Up to <span class="font-bold">20% OFF</span></h3></div><img src="c2-assets/dawat-mock-up.png" style="width: 50%;"></div>
+<!-- second -->
+<div class="flex bg-blue-900 p-5 rounded-2xl gap-10 items-center">
+<div class="flex flex-col gap-7 justify-center items-left"><img src="c2-assets/india-gate-logo.png" style="width: 50%;"><button class="bg-blue-700 text-white font-light px-6 py-2 rounded-xl">World’s No.1 Rice</button>
+<h3 class="text-2xl text-white font-light">Up to <span class="font-bold">40% OFF</span></h3></div><img src="c2-assets/india-gate-mock-up.png" style="width: 30%;"></div>
+</div>
+</div>
+<!-- customars feedback -->
+ <div>
+ <h1 class="text-2xl text-green-600 text-center p-10">Our Customer Feedback</h1>
+<div class="chat chat-start">
+    <div class="chat-image avatar">
+      <div class="w-10 rounded-full">
+        <img
+          alt="Tailwind CSS chat bubble component"
+          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+      </div>
+    </div>
+    <div class="chat-header">
+      Customer
+      <time class="text-xs opacity-50">12:45</time>
+    </div>
+    <div class="chat-bubble chat-bubble-success">The Product is really Good,
+        <br />
+        I Love It.Thanks!</div>
+    <div class="chat-footer opacity-50">Delivered</div>
+  </div>
+  <div class="chat chat-end">
+    <div class="chat-image avatar">
+      <div class="w-10 rounded-full">
+        <img
+          alt="Tailwind CSS chat bubble component"
+          src="c2-assets/Group.png" />
+      </div>
+    </div>
+    <div class="chat-header">
+      Seller
+      <time class="text-xs opacity-50">12:46</time>
+    </div>
+    <div class="chat-bubble chat-bubble-success">Thank You Sir/Ma'am For Your <br>feedback and Suppot!<br>Its alawys a Pleasure.</div>
+    <div class="chat-footer opacity-50">Seen</div>
+  </div>
+</div>
+
 </main>
 </body>
 </html>
